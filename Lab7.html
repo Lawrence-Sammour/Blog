@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lab7 </title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto 80% auto;
+      grid-gap: 0px;
+      height: 100vh;
+      background-color: rgb(123, 255, 0);
+      width: 100vw;
+    }
+
+    .text {
+      text-align: center;
+      color: white;
+      font-family: "times new roman";
+    }
+
+    .page-top,
+    .page-bottom {
+      background-color: black;
+    }
+
+    .page-top {
+      width: 100%;
+      height: 100%;
+    }
+
+    .menue {
+      display: flex;
+      flex-direction: row;
+      background-color: rgb(128, 128, 128);
+    }
+
+    .menue>div {
+      margin: 2%;
+      margin-top: 0.5%;
+      margin-bottom: 0.5%;
+      width: 100%;
+      height: 30px;
+      background-color: rgb(220, 220, 220);
+      cursor: pointer;
+    }
+
+    .menue-button {
+      margin-top: 1%;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: transparent;
+      cursor: pointer;
+    }
+
+    .circle {
+      height: 50px;
+      width: 50px;
+      background-color: yellow;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 3px;
+      margin-right: 3px;
+      margin-left: 3px;
+      margin-bottom: 10px;
+    }
+
+    .circle,
+    .square {
+      border: 2px solid green;
+    }
+
+    .square {
+      height: 60px;
+      width: 60px;
+      background-color: #FFC0CB;
+      border-radius: 10px;
+    }
+
+    .button {
+      background-color: rgb(220, 220, 220);
+      border: none;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      padding: 1px;
+      cursor: pointer;
+      font-size: large;
+    }
+    #image1{
+      display: none;
+    }
+    .square-container {
+      display: flex;
+      background-color: rgb(123, 255, 0);
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (max-width: 480px) {
+      .menue {
+        flex-direction: column;
+      }
+
+      .menue>div {
+        width: 96.2%;
+      }
+
+      .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 5% 20% 70% 5%;
+      }
+
+      .text {
+        font-size: 50%;
+      }
+
+      .button {
+        height: 20px;
+        width: 50px;
+        font-size: 8px;
+      }
+      /* #image1{
+        display: none;
+      } */
+    }
+
+    @media only screen and (max-width: 320px) {
+      .menue {
+        display: none;
+      }
+
+      .menue>div {
+        display: none;
+      }
+
+      .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 3% 94% 3%;
+      }
+
+      .text {
+        font-size: 30%;
+      }
+
+      .button {
+        height: 15px;
+        width: 30px;
+        font-size: 5px;
+      }
+
+     .page-top{
+        display: grid;
+        background-color: black;
+        grid-template-columns: auto 95%;
+        grid-template-rows: auto;
+      }
+      #image1{
+        display: unset;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0px 0px">
+  <div class="grid-container">
+      <div class="page-top text">
+         <div><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-nqQZIx9OUoPlfzoaElu1heoYU7qsHmMmQ&usqp=CAU"
+            width="100%" height="100%" id="image1"> </div>
+       <div> 
+         <h1>
+          MY NAME IS LAWRENCE SAMMOUR
+        </h1>
+       </div>
+        <div> <button class="button"> Contact me </button> </div>
+      </div>
+    <div class="menue">
+      <div>
+        <button class="menue-button">
+          Deals
+        </button>
+      </div>
+      <div>
+        <button class="menue-button">
+          Gifts
+        </button>
+      </div>
+      <div>
+        <button class="menue-button">
+          Vouchers
+        </button>
+      </div>
+      <div>
+        <button class="menue-button">
+          Free
+        </button>
+      </div>
+      <div>
+        <button class="menue-button">
+          Orders
+        </button>
+      </div>
+    </div>
+    <div class=square-container>
+      <div class="square">
+        <div class="circle"> </div>
+      </div>
+    </div>
+
+    <div class="page-bottom text">
+      <h5> Bethlehem University </h5>
+    </div>
+
+  </div>
+</body>
+
+</html>

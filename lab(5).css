@@ -1,0 +1,52 @@
+.backgroundimage {
+    background-image: url("city_backgroud_image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0px;
+}
+
+.text {
+    text-align: center;
+    color: black;
+    transform: none;
+}
+
+.anchor {
+    padding: 0.7%;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 20%;
+}
+
+.backgroundbrown {
+    background-color: #A0522D;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item1 {
+    width: 30%;
+}
+
+.flex-item2 {
+    width: 40%;
+}
+
+.backgroundwhite {
+    background-color: white;
+}
+
+a:hover {
+    background-color: white;
+}
